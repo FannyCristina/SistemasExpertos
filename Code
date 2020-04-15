@@ -1,0 +1,54 @@
+-----Ver si un numero es o no primo-------
+
+(deffunction numPrimo (?x)
+	(bind ?cont 0)
+	(bind ?aux (- ?x 1))
+	(loop-for-count(?i 2 ?aux) 
+		(if (=(mod ?x ?i) 0)
+		then
+			(if (neq ?x 2)
+			then
+				(bind ?cont 1)
+			)
+		)
+	)
+	(if (= ?cont 1)
+	then 
+		(printout t "El numero " ?x " no es primo." crlf)
+	else
+		(printout t "El numero " ?x " es primo." crlf)
+	)
+)
+
+( printout t "Respuesta " (numPrimo 4)crlf)
+( printout t "Respuesta " (numPrimo 5)crlf)
+
+------------------------------------------------
+
+(deffunction fibo (?a)
+	(printout t ?a "" crlf)
+    (if (or (= ?a 0) (= ?a 1)) then
+		(bind ?a 1) 
+		(printout t ?a "" crlf)
+		(bind ?a 0)
+		(printout t ?a "" crlf)
+	else 
+		
+	(+ (fibo(- ?a 1)) (fibo(- ?a 2)))))
+		
+(printout t "Fibonacci "(fibo 4)crlf)
+---------------------------------------------------
+
+(deffunction fi (?n)
+        (if (< ?n 2) then 
+                ?n
+        else 
+            (+ (fi(- ?n 1)) (fi(- ?n 2))))
+)
+
+(deffunction fibo (?n)
+    (loop-for-count( ?cont 0 (- ?n 1) ) do
+        (printout t "" (fi ?cont) crlf)
+    )
+)
+(printout t "" (fibo 5) crlf)
