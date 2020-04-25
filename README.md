@@ -29,3 +29,12 @@
       - (reset)<br>
       - (run)<br>
       - **Para agregar numeros o ordenar otros modificar archivo en la parte **deffacts vect , Index debe incrementar**
+      
+## Echos Activa Letras
+### Ejecucion
+**1** Clonar [**echosLetras.clp**](https://github.com/jcuyaguari/SistemasExpertos/blob/master/echosLetras.clp) <br>
+**2** Ejecutar en clips:<br>
+      - (load "echosLetras.clp")<br>
+      - (reset)<br>
+      - (rules)<br>
+      - (run)<br>
