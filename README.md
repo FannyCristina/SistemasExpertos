@@ -38,3 +38,6 @@
       - (reset)<br>
       - (rules)<br>
       - (run)<br>
+
+## Triangulo
+### Ejecucion
