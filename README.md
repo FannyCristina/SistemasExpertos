@@ -41,3 +41,11 @@
 
 ## Triangulo
 ### Ejecucion
+
+## Arbol Familiar
+### Ejecucion
+**1** Clonar<br>
+**2** Ejecutar en clips:<br>
+      - (load "arbolFamiliar.clp")<br>
+      - (reset)<br>
+      - (run)<br>
